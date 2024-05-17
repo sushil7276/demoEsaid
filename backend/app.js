@@ -21,4 +21,8 @@ app.use(
   })
 );
 
+// Route import
+const user = require("./routes/userRoute");
+app.use("/api", user);
+
 module.exports = app;
